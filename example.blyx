@@ -1,0 +1,13 @@
+use edgeaudit;
+
+fn main() {
+    let starts = [1, 1, 2];
+    let ends = [2, 2, 2];
+    let result = edgeaudit_duplicates(starts, ends);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
